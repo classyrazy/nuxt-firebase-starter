@@ -1,0 +1,80 @@
+@components{
+    @layer components {
+        .w-contain{
+            @apply w-full 2xl:max-w-[1400px] mx-auto;
+        }
+        .btn-primary{
+            @apply bg-primary text-white text-base text-center font-[400] rounded-[59px] inline-block;
+        }
+        .e_link{
+            @apply text-[#5B8DEF] font-[400] underline;
+        }
+        .btn-transaction-primary{
+            @apply bg-primary text-white text-base text-center font-[400] rounded-[8px] inline-block;
+        }
+        .btn-service-primary{
+            @apply bg-primary text-white text-base text-center font-[400] rounded-[59px] inline-block;
+        }
+        .btn-snow{
+            @apply bg-snow text-graylight text-base text-center font-[400] rounded-[59px] inline-block;
+        }
+        .btn-bordered{
+            @apply border border-primary text-primary text-base text-center font-[400] rounded-[59px] inline-block;
+        }
+        .btn-bordered-gray{
+            @apply border border-[#E6E6E6] text-[#1E1E1E] text-base text-center font-[400] rounded-[59px] inline-block;
+        }
+        .form-input-con{
+            @apply flex flex-col gap-2 w-full
+        }
+        .default-input{
+            @apply outline-none
+        }
+        .form-input{
+            @apply bg-qa-white-service border border-re-transparent text-dark text-sm  font-[400] rounded-xl focus:border-primary outline-none 
+        }
+        .auth-form-input{
+            @apply bg-[#F5F5F5] border border-transparent text-black text-sm  font-[400] rounded-xl focus:border-primary outline-none;
+        }
+        .service-form-input{
+            @apply bg-qa-white-service border border-re-transparent text-dark text-sm  font-[400] rounded-xl focus:border-primary outline-none;
+        }
+        .auth-otp-input{
+            @apply bg-[#F5F5F5] border border-transparent text-gray2  font-[700] rounded-[18px] focus:border-primary outline-none;
+        }
+        .default-otp-input{
+            @apply  border border-re-transparent text-gray2  font-[700] rounded-[18px] focus:border-primary outline-none;
+        }
+        .keypad-button{
+            @apply text-2xl font-[400] text-center 
+        }
+        .hide-caret{
+            @apply caret-transparent;
+        }
+        .text_error_msg{
+            @apply text-red text-sm font-[400] mt-1;
+        }
+        .blur-bg{
+            background: rgba(0, 0, 0, 0.20);
+            backdrop-filter: blur(2.5px);
+        }
+        .reset-blur-bg{
+            background: transparent;
+            backdrop-filter: none;
+        }
+        .auth-text-input{
+            @apply bg-main-white border border-lavender text-dark text-sm  font-[400] rounded-2xl focus:border-primary outline-none;
+        }
+        .curency-input{
+            @apply bg-main-white border border-lavender text-dark text-sm  font-[400] rounded-2xl focus:border-primary outline-none placeholder:mx-auto;
+        }
+        .go-back-btn{
+           @apply bg-[#F5F5F5] rounded-3xl inline-flex items-center justify-center py-2 px-3 font-[600] text-sm;
+        }
+        .inside-scroll{
+            /* max-height: calc(100vh - 100px); */
+            @apply overflow-y-auto pb-10 md:max-h-[calc(100vh-100px)];
+        }
+    }
+    
+}

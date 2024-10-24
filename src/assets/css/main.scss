@@ -1,0 +1,59 @@
+@import url('./variables.css');
+@import url('./global.css');
+@import url('./components.css');
+
+
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+.iconify-icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+ }
+.scroll {
+    overflow-y: auto;
+
+    // Styles for large screens
+    @media (min-width: 768px) {
+        // Adjust the breakpoint as needed
+    
+        &::-webkit-scrollbar {
+            width: 4px;
+            background: transparent;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: transparent;
+        }
+
+        &:hover::-webkit-scrollbar-thumb,
+        &:active::-webkit-scrollbar-thumb {
+            background: #F66B03;
+            border-radius: 10px;
+        }
+
+        &::-webkit-scrollbar-track {
+            // background: transparent;
+            // @apply  bg-main-white;
+
+        }
+
+        &:hover::-webkit-scrollbar-track,
+        &:active::-webkit-scrollbar-track {
+            // @apply  bg-main-white;
+        }
+    }
+
+    // Styles for mobile and medium screens
+    @media (max-width: 767px) {
+        // Adjust the breakpoint as needed
+        max-height: none; // No defined max-height for smaller screens
+
+        &::-webkit-scrollbar {
+            display: none; // Optionally hide the scrollbar on smaller screens
+        }
+    }
+}
+
